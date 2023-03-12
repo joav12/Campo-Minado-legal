@@ -1,6 +1,6 @@
 var grade = document.getElementById("grade");
 //desativa o botão direito
-//document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 let modoTeste = false//Ative essa variavel para poder ver aonde estão as bombas
 
 //Timer
