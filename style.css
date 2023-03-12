@@ -1,0 +1,86 @@
+BODY {
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  H1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: normal;
+    margin-top: 100px;
+  }
+
+  .divizinha{
+    background-color: #3ad59f;
+    width: 500px;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: grid;
+  }
+
+  .divizinha input{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 110px;
+  }
+
+  .divizinha h5{
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .divizinha p {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #grade {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #grade TR TD{
+    border:1px solid rgb(2, 0, 0);
+    background: #13c502;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  #grade TR TD.clicada {
+      background: #195800;
+  }
+  
+  #grade TR TD.mina {
+      background-image: url(bombinha.png);
+  }
+  
+  BUTTON {
+    margin: 12px;
+  }
+
+  .timmer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .timmer button{
+    margin-left: 15px;
+  }
+
+/*Footer*/
+.footerTop{
+  margin-top: 50px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  display: flex;
+  text-align: center;
+  background-color: #3ad59f;
+}
