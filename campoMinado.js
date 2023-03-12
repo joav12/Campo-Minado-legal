@@ -133,7 +133,6 @@ function cliqueCelula(celula) {
 if (celula.getAttribute("dataMina")=="true") {
       revelarMinas();
       alert("Você perdeu >:(");
-      gerarGrade()
       resetarTimer()
     } else {
       celula.className="clicada";
