@@ -89,7 +89,8 @@ function gerarGrade() {
 
 function addMina() {
     //Adiciona minas randomicamente
-    for (var i=0; i<tamanho * 3; i++) {
+    if (tamanho >= 11){
+      for (var i=0; i<tamanho * 5; i++) {
         var li = Math.floor(Math.random() * tamanho)
         var col = Math.floor(Math.random() * tamanho)
         var celula = grade.rows[li].cells[col]
@@ -98,7 +99,21 @@ function addMina() {
         if (modoTeste == true) {
            celula.innerHTML = "🚩"; 
         } 
+      }
+    } else{
+      for (var i=0; i<tamanho * 2; i++) {
+        var li = Math.floor(Math.random() * tamanho)
+        var col = Math.floor(Math.random() * tamanho)
+        var celula = grade.rows[li].cells[col]
+        celula.setAttribute("DataMina","true")
+
+        if (modoTeste == true) {
+           celula.innerHTML = "🚩"; 
+        } 
+      }
     }
+
+    
 }
 
 function revelarMinas() {
@@ -133,7 +148,7 @@ function cliqueCelula(celula) {
 if (celula.getAttribute("dataMina")=="true") {
       revelarMinas();
       alert("Você perdeu >:(");
-      resetarTimer()
+      pausarTimer()
     } else {
       celula.className="clicada";
       //Conta e mostra as minas adjacentes
